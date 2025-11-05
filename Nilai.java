@@ -4,7 +4,7 @@ public class Nilai {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        double strukturData,PemrogramanBO,BasisData,algoritmaPemrograman,rpl;
+        double strukturData,PemrogramanBO,BasisData,algoritmaPemrograman, RekayasaPerangkatLunak;
 
 
         System.out.print("Masukkan Nilai Struktur Data: ");
