@@ -20,6 +20,23 @@ public class Nilai {
 
 
         double rataRata = (strukturData + PemrogramanBO + BasisData + algoritmaPemrograman + RekayasaPerangkatLunak) / 5;
-        double ipk = (rataRata / 100) * 4;    
+        double ipk = (rataRata / 100) * 4;
+
+
+        String predikat;
+        
+        if(ipk < 0 || ipk > 4.00){
+           predikat = "Masukkan nilai matkul dengan benar";
+        }else if(ipk >= 3.75){
+            predikat = "A (Sangat Baik)";
+        }else if(ipk >= 3.50){
+            predikat = "AB (Baik Sekali)";
+        }else if(ipk >= 3.00){
+            predikat = "B (Baik)";
+        }else if(ipk >= 2.50){
+            predikat = "BC (Cukup)";
+        }else{
+            predikat = "C (Kurang)";
+        }
     }
 }
