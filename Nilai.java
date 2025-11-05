@@ -4,7 +4,7 @@ public class Nilai {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        double strukturData,PemrogramanBO,BasisData,algoritmaPemrograman,RekayasaPerangkatLunak;
+        double strukturData,PemrogramanBO,BasisData,algoritmaPemrograman,rpl;
 
 
         System.out.print("Masukkan Nilai Struktur Data: ");
@@ -50,8 +50,47 @@ public class Nilai {
             System.out.println("3. Basis Data");
             System.out.println("4. Algoritma dan Pemrograman");
             System.out.println("5. Rekayasa Perangkat Lunak");
-        }else{
-            System.out.println("\nMahasiswa Belum Memenuhi Syarat");
+
+            System.out.print("\nPilih Mata Kuliah Yang memiliki nilai minimal 75: ");
+            int pilihan = sc.nextInt();
+
+            switch(pilihan){
+                case 1:
+                    if(strukturData >= 75){
+                        System.out.println("Selamat, Mahasiswa eligible untuk menjadi Asisten Dosen");
+                    }else{
+                        System.out.println("Mahasiswa Belum memenuhi syarat untuk posisi tersebut");
+                    }
+                    break;
+                case 2:
+                    if(PemrogramanBO >= 75){
+                        System.out.println("Selamat, Mahasiswa eligible untuk menjadi Asisten Dosen");
+                    }else{
+                        System.out.println("Mahasiswa Belum memenuhi syarat untuk posisi tersebut");
+                    }
+                    break;
+                case 3:
+                    if(BasisData >= 75){
+                        System.out.println("Selamat, Mahasiswa eligible untuk menjadi Asisten Dosen");
+                    }else{
+                        System.out.println("Mahasiswa Belum memenuhi syarat untuk posisi tersebut");
+                    }
+                    break;
+                case 4:
+                    if(algoritmaPemrograman >= 75){
+                        System.out.println("Selamat, Mahasiswa eligible untuk menjadi Asisten Dosen");
+                    }else{
+                        System.out.println("Mahasiswa Belum memenuhi syarat untuk posisi tersebut");
+                    }
+                    break;
+                case 5:
+                    if(RekayasaPerangkatLunak >= 75){
+                        System.out.println("Selamat, Mahasiswa eligible untuk menjadi Asisten Dosen");
+                    }else{
+                        System.out.println("Mahasiswa Belum memenuhi syarat untuk posisi tersebut");
+                    }
+                    break;
+            }
         }
     }
 }
