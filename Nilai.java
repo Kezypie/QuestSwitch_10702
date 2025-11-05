@@ -38,5 +38,9 @@ public class Nilai {
         }else{
             predikat = "C (Kurang)";
         }
+
+        System.out.println("\nHasil Nilai\n");
+        System.out.println("IPK: " + ipk );
+        System.out.println("Predikat: " + predikat);
     }
 }
