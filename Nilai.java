@@ -16,6 +16,10 @@ public class Nilai {
         System.out.print("Masukkan Nilai Algoritma dan Pemrograman: ");
         algoritmaPemrograman = sc.nextDouble();
         System.out.print("Masukkan Nilai Rekayasa Perangkat: ");
-        RekayasaPerangkatLunak = sc.nextDouble(); 
+        RekayasaPerangkatLunak = sc.nextDouble();
+
+
+        double rataRata = (strukturData + PemrogramanBO + BasisData + algoritmaPemrograman + RekayasaPerangkatLunak) / 5;
+        double ipk = (rataRata / 100) * 4;    
     }
 }
