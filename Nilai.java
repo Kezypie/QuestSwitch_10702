@@ -90,6 +90,10 @@ public class Nilai {
                         System.out.println("Mahasiswa Belum memenuhi syarat untuk posisi tersebut");
                     }
                     break;
+                    default:
+                        System.out.println("Pilih Mata Kuliah Mulai dari 1 hingga 5");
+                        break;
+
             }
         }
     }
