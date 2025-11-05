@@ -18,6 +18,13 @@ public class Nilai {
         System.out.print("Masukkan Nilai Rekayasa Perangkat: ");
         RekayasaPerangkatLunak = sc.nextDouble();
 
+        if (strukturData < 0 || strukturData > 100 ||
+            PemrogramanBO < 0 || PemrogramanBO > 100 ||
+            BasisData < 0 || BasisData > 100 ||
+            algoritmaPemrograman < 0 || algoritmaPemrograman > 100 ||
+            RekayasaPerangkatLunak < 0 || RekayasaPerangkatLunak > 100) 
+        {
+
 
         double rataRata = (strukturData + PemrogramanBO + BasisData + algoritmaPemrograman + RekayasaPerangkatLunak) / 5;
         double ipk = (rataRata / 100) * 4;
@@ -100,3 +107,4 @@ public class Nilai {
 
             }
         }
+    }
