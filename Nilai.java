@@ -102,9 +102,10 @@ public class Nilai {
                         break;
                         sc.close();
         
+        }
     }
-}            }else{
+}
+ }else{
 
             }
-        }
     }
