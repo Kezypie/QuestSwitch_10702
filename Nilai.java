@@ -93,8 +93,10 @@ public class Nilai {
                     default:
                         System.out.println("Pilih Mata Kuliah Mulai dari 1 hingga 5");
                         break;
+                        sc.close();
+        
+    }
+}            }else{
 
             }
         }
-    }
-}
