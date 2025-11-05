@@ -42,5 +42,16 @@ public class Nilai {
         System.out.println("\nHasil Nilai\n");
         System.out.println("IPK: " + ipk );
         System.out.println("Predikat: " + predikat);
+
+        if(predikat.equals("A (Sangat Baik)") || predikat.equals("AB (Baik Sekali)")){
+            System.out.println("\nDaftar Mata Kuliah Yang Dapat Diajukan Untuk Posisi Asisten: \n");
+            System.out.println("1. Struktur Data");
+            System.out.println("2. Pemrograman Berorientasi Objek");
+            System.out.println("3. Basis Data");
+            System.out.println("4. Algoritma dan Pemrograman");
+            System.out.println("5. Rekayasa Perangkat Lunak");
+        }else{
+            System.out.println("\nMahasiswa Belum Memenuhi Syarat");
+        }
     }
 }
